@@ -1,0 +1,66 @@
+<%= form_for :table, url: tables_path, method: :get do |f| %>
+  <div class="col-sm-12 dropdown-buttons">
+    <div class="details-1">
+      <div class="col-sm-12">
+        <p>
+          <% if @tables %>
+            <% unless @tables.any? %>
+              <%= t "order_table.index.not_found" %>
+            <% else %>
+              <%= t "order_table.index.found_out" %>
+              <%= @tables.count.to_s %>
+              <%= t "order_table.index.tables" %>
+              <% @tables.each do |table| %>
+                <%= t "order_table.index.table" %>
+                <%= table.id.to_s %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </p>
+      </div>
+      <div class="col-sm-12 dropdown-buttons"> 
+        <div class="col-sm-3 dropdown-button">
+          <div class="input-group">
+            <%= f.date_field :day ,value: Date.today, class: "form-control has-dark-background" %>
+          </div>
+        </div>
+        <div class="col-sm-2 dropdown-button">
+          <div class="input-group">
+            <%= f.number_field :capacity, min: Settings.capacity.minimum_value, 
+              max: Settings.capacity.maximum_value, class: "form-control has-dark-background", 
+              placeholder: (t "order_table.index.capacity") %>
+          </div>
+        </div>
+        <div class="col-sm-2 dropdown-button">
+          <div class="input-group">
+            <%= f.time_field :from, class: "form-control has-dark-background",
+              placeholder: (t "order_table.index.from") %>
+          </div>
+        </div>
+        <div class="col-sm-2 dropdown-button"> 
+          <div class="input-group">
+            <%= f.time_field :to, class: "form-control has-dark-background",
+              placeholder: (t "order_table.index.to") %>
+          </div>
+        </div>
+        <div class="col-sm-2 submit_button"> 
+          <div class="input-group">
+            <%= f.submit t "order_table.index.find_tables" %>
+          </div>
+        </div>
+        <div class="col-sm-1 submit_button"> 
+          <div class="input-group">
+            <% if current_user %>
+              <%= link_to t("order_table.index.go_book_table"), new_user_order_table_path(current_user),
+                class: "btn2" %>
+            <% else %>
+              <%= link_to t("order_table.index.go_book_table"), new_guest_path, class: "btn2" %>
+            <% end %>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div> 
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+<% end %>

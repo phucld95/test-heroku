@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantity: 1
+  bill: one
+  dish: one
+
+two:
+  quantity: 1
+  bill: two
+  dish: two

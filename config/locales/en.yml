@@ -1,0 +1,146 @@
+en:
+  restaurant_name: "ZENTRO" 
+  site:
+    name: Library
+    slogan: Slogan
+  error:
+    desc: The form contains
+  navbar:
+    home: HOME
+    food_gallery: FOOD GALLERY
+    menu: MENU
+    chefs: CHEFS
+    review: REVIEW
+    login: LOGIN
+    signup: SIGN UP
+    user: USERS
+    profile: Profile
+    setting: Setting
+    logout: Log out
+    account: Account
+  home:
+    title: ZENTRO RESTAURANT
+    clean_and_simple: CLEAN & TASTY
+    find_tables: FIND TABLES
+  gallery:
+    food_gallery: Food Gallery
+    gallery1_name: Lemon-Rosemary Prawn
+    gallery1_detail: Seafood / Shrimp / Lemon
+    gallery2_name: Lemon-Rosemary Vegetables
+    gallery2_detail: Tomato / Rosemary / Lemon
+    gallery3_name: Lemon-Rosemary Bakery
+    gallery3_detail: Bread / Rosemary / Orange
+    gallery4_name: Lemon-Rosemary Salad
+    gallery4_detail: Chicken / Rosemary / Green
+    gallery5_name: Lemon-Rosemary Pizza
+    gallery5_detail: Pasta / Rosemary / Green 
+  chefs:
+    meet_chefs: Meet Zentro chefs
+    chef1_name: Thanya
+    chef1_role: Main Chef
+  contact:
+    contact_us: Contact Us
+  footer:
+    contact_info: Contact Info.
+    phone: Phone
+    phone_number: 090-080-0760
+    location: Our Location
+    location_detail: 120 Duis aute irure, California, USA
+    open_house: Open Hours
+    follow_us : Follow Us
+    sunday: Sunday 
+    time1: 10:30 AM - 10:00 PM
+  menu:
+    menu: MENU
+    submit: Submit
+    quantity: Quantity
+  error:
+    signup: This form contain %{count}
+    error: error
+    errors: errors
+    _error: This form contain
+    book_fails: An error occurred. Book dish fails!
+  flash:
+    wrong_pass: Invalid email/password combination
+    user_not_exist: User not exist
+    user_not_found: User not found
+    welcome: Welcome to ZENTRO family!!
+    create_new_account: Create new account
+    step3: Book a table!
+    step2: Input your information!
+    category:
+      create_success: "Created category successfully"
+      update_success: "Updated category successfully."
+    staff: Don't have any staff!
+    book_success: Book dish success!
+  title:
+    sign_up: Sign up
+    login: Log in
+  messeger:
+    new_user: New user? Sign up now.
+  label:
+    pass_confirm: Password confirmation
+  order_table:
+    index:
+      found_out: "Having found out"
+      tables: "tables:"
+      not_found: The satisfied tables are not found!
+      table: table
+      find_tables: Find tables
+      go_book_table: Go
+      capacity: Capacity
+      submit: SUBMIT
+      submit_with_book_dishes: SUBMIT and book dishes
+      date: DATE
+      from: FROM
+      to: TO
+      book_table: BOOK TABLE
+      table_number: Table Number
+  guest:
+    name: Name
+    email: email
+    phone: Phone Number
+    next: Next
+    about_you: About you
+  admin:
+    menu: Menu
+    cate: Category
+    staff: Staff
+    working: Working day
+    bill: Bill
+    table: Table
+    revenue: Revenue
+    categories:
+      index:
+        title: "Categories"
+        add_button: "Create category"
+        name: "Category"
+        opition: "Opition"
+      form:
+        name: "Category name:"
+        create_button: "Create"
+        update_button: "Update"
+      category:
+        view_button: "Details"
+        edit_button: "Edit"
+        delete_button: "Delete"
+        delete_warning: "Are you sure?"
+    about_you: ABOUT YOU
+  staff:
+    name: Name
+    salary: Salary
+    workday: Working day
+    role: Role
+    action: Action
+    email: Email
+    del: Delete
+  dialog:
+    confirm_delete: Delete? Are you sure?
+  review:
+    review: Reviews
+    write_review: Write review
+    input: Input your review.
+    name: Name
+    email: Email
+    phone: Phone number
+    my_review: My review
